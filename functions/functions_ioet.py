@@ -93,7 +93,7 @@ def match_up(dict_general):
                 list_Final_tuples, list_Employee_pairs=add_data(user_A, user_B, coincidences, list_Final_tuples, list_Employee_pairs)
     return list_Final_tuples
 
-def unique_couples_filter(user_A, user_B, list_EmployeePairs):
+def unique_couples_filter(user_A, user_B, list_Employee_pairs):
     '''
 
     The function takes as arguments two usernames and a list of existing partners, and returns the 
@@ -109,7 +109,7 @@ def unique_couples_filter(user_A, user_B, list_EmployeePairs):
                 is_unique(bool): Returns the truth value that they are unique
 
     '''
-    is_unique=user_A!=user_B and (user_A,user_B) not in list_EmployeePairs
+    is_unique=user_A!=user_B and (user_A,user_B) not in list_Employee_pairs
     return is_unique
   
 
